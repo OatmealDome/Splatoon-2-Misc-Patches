@@ -1,0 +1,130 @@
+@little-endian
+@nsobid-25E4DE94C55DC7A3A9849280B09FCFCB
+# Splatoon 2
+
+@flag offset_shift 0x100
+
+// ********************************************************************
+//
+// (c) 2018 OatmealDome and contributors
+// Licensed under GPLv3, please visit the following URL for more info:
+// https://www.gnu.org/licenses/gpl-3.0.en.html
+//
+// One Player Private Battles
+// Ported by Dualie, Khangaroo, and Zewia
+//
+// Dedicated to Simonx22
+//
+// ********************************************************************
+
+Function - Cnet::CoopLocalMatchmakeExe::stateEnterWeaponSelectReady
+Description - Disable communication error when only one person enters Salmon Run weapon selection
+
+// .text:00000000001F6CF0 _ZN4Cnet21CoopLocalMatchmakeExe27stateEnterWeaponSelectReadyEv
+// .text:00000000001F6CF0
+// .text:00000000001F6D30                 ADRP            X8, #aPrivatematchpa@PAGE ; "PrivateMatchPassSingle"
+// .text:00000000001F6D34                 ADD             X8, X8, #aPrivatematchpa@PAGEOFF ; "PrivateMatchPassSingle"
+// .text:00000000001F6D38                 MOV             X1, SP
+// .text:00000000001F6D3C                 MOV             W2, #1
+// .text:00000000001F6D40                 STR             X8, [SP,#0x20+var_18]
+// .text:00000000001F6D44                 BL              _ZNK4sead10GameConfig13findBoolImpl_ERKNS_14SafeStringBaseIcEEb ; sead::GameConfig::findBoolImpl_(sead::SafeStringBase<char> const&,bool)
+// .text:00000000001F6D48                 NOP                     ; Keypatch modified this from:
+// .text:00000000001F6D48                                         ;   CBZ X0, loc_1F6D54
+// .text:00000000001F6D4C                 NOP                     ; Keypatch modified this from:
+// .text:00000000001F6D4C                                         ;   LDRB W8, [X0]
+// .text:00000000001F6D50                 B               loc_1F6D74 ; Keypatch modified this from:
+// .text:00000000001F6D50                                         ;   CBNZ W8, loc_1F6D74
+//
+// Force PrivateMatchPassSingle to be true here - if this flag isn't
+// set or if there is only one person in the SR room, then the game
+// thinks something went wrong and shows a "a communications error
+// has occurred".
+@enabled
+0025943C 1F2003D51F2003D50900
+00259447 14
+
+// .text:00000000001FCBF0 _ZN4Cnet25VersusPrivateMatchmakeExe20stateEnterTeamSelectEv
+// .text:00000000001FCBF0
+// .text:00000000001FCC2C                 ADRP            X8, #aPrivatematchpa@PAGE ; "PrivateMatchPassSingle"
+// .text:00000000001FCC30                 ADD             X8, X8, #aPrivatematchpa@PAGEOFF ; "PrivateMatchPassSingle"
+// .text:00000000001FCC34                 MOV             X1, SP
+// .text:00000000001FCC38                 MOV             W2, #1
+// .text:00000000001FCC3C                 STR             X8, [SP,#0x20+var_18]
+// .text:00000000001FCC40                 BL              _ZNK4sead10GameConfig13findBoolImpl_ERKNS_14SafeStringBaseIcEEb ; sead::GameConfig::findBoolImpl_(sead::SafeStringBase<char> const&,bool)
+// .text:00000000001FCC44                 NOP                     ; Keypatch modified this from:
+// .text:00000000001FCC44                                         ;   CBZ X0, loc_1FCC50
+// .text:00000000001FCC48                 NOP                     ; Keypatch modified this from:
+// .text:00000000001FCC48                                         ;   LDRB W8, [X0]
+// .text:00000000001FCC4C                 B               loc_1FCC70 ; Keypatch modified this from:
+// .text:00000000001FCC4C                                         ;   CBNZ W8, loc_1FCC70
+//
+// Force PrivateMatchPassSingle to be true here - if this flag isn't
+// set or if there is only one person in the lobby, then the game
+// thinks something went wrong and shows a "a communications error
+// has occurred".
+@enabled
+00260320 1F2003D51F2003D50900 
+0026032B 14 
+
+// .text:000000000125FD30 _ZN5Match16VersusPrivateSeq13stateMatchingEv
+// .text:000000000125FD30
+// .text:000000000125FE44 loc_125FE44                             ; CODE XREF: Match::VersusPrivateSeq::stateMatching(void)+F8↑j
+// .text:000000000125FE44                 LDR             X0, [X19,#0x3D8] ; this
+// .text:000000000125FE48                 MOV             W1, #1  ; bool
+// .text:000000000125FE48                                         ; Keypatch modified this from:
+// .text:000000000125FE48                                         ;   MOV W1, W20
+// .text:000000000125FE4C                 BL              _ZN5Match19UIVersusPageHandler31setDispValidStartBtnPrivateMainEb ; Match::UIVersusPageHandler::setDispValidStartBtnPrivateMain(bool)
+//
+// Force PrivateMatchPassSingle to be true here as well - if this flag
+// isn't set, the game doesn't enable the button which advances to
+// the team selector.
+//
+@enabled
+012C6D08 21008052 
+
+// .text:00000000012430B8 _ZN5Match12CoopLocalSeq13stateMatchingEv
+// .text:00000000012430B8
+// .text:0000000001243180                 LDR             X0, [X8] ; sead::GameConfig::sInstance
+// .text:0000000001243184                 ADD             X8, X9, #0x10
+// .text:0000000001243188                 CMP             W21, #1
+// .text:000000000124318C                 MOV             W2, #1
+// .text:0000000001243190                 MOV             W20, #1 ; Keypatch modified this from:
+// .text:0000000001243190                                         ;   CSET W20, GT
+// .text:0000000001243194                 STR             X8, [SP,#0x30+var_30]
+// .text:0000000001243198                 ADRP            X8, #aPrivatematchpa@PAGE ; "PrivateMatchPassSingle"
+// .text:000000000124319C                 ADD             X8, X8, #aPrivatematchpa@PAGEOFF ; "PrivateMatchPassSingle"
+// .text:00000000012431A0                 MOV             X1, SP
+// .text:00000000012431A4                 STR             X8, [SP,#0x30+var_28]
+// .text:00000000012431A8                 BL              _ZNK4sead10GameConfig13findBoolImpl_ERKNS_14SafeStringBaseIcEEb ; sead::GameConfig::findBoolImpl_(sead::SafeStringBase<char> const&,bool)
+// .text:00000000012431AC                 CBZ             X0, loc_12431C8
+// .text:00000000012431B0                 LDRB            W9, [X0]
+// .text:00000000012431B4                 CMP             W21, #1
+// .text:00000000012431B8                 CSET            W8, GT
+// .text:00000000012431BC                 CMP             W9, #0
+// .text:00000000012431C0                 CSET            W9, NE
+// .text:00000000012431C4                 MOV             W20, #1 ; Keypatch modified this from:
+// .text:00000000012431C4                                         ;   ORR W20, W8, W9
+//
+// Force PrivateMatchPassSingle to be true over here too - if this flag
+// isn't set, the game doesn't enable the button which advances to
+// the weapon selector.
+@enabled
+012A9A88 21008052
+
+// .text:000000000125F4C8 _ZN5Match16VersusPrivateSeq21stateTeamSelectDecideEv
+// .text:000000000125F4C8
+// .text:000000000125F530 loc_125F530                             ; CODE XREF: Match::VersusPrivateSeq::stateTeamSelectDecide(void)+1C↑j
+// .text:000000000125F530                 BL              _ZNK5Match19UIVersusPageHandler28isEndDecidePrivateTeamSelectEv ; Match::UIVersusPageHandler::isEndDecidePrivateTeamSelect(void)
+// .text:000000000125F534                 TBZ             W0, #0, loc_125F550
+// .text:000000000125F538                 LDR             X0, [X19,#0x3D8] ; this
+// .text:000000000125F53C                 BL              _ZNK5Match19UIVersusPageHandler36isDispValidStartBtnPrivateTeamSelectEv ; Match::UIVersusPageHandler::isDispValidStartBtnPrivateTeamSelect(void)
+// .text:000000000125F540                 NOP                     ; Keypatch modified this from:
+// .text:000000000125F540                                         ;   TBZ W0, #0, loc_125F55C
+// .text:000000000125F544                 LDR             X8, [X19,#0x3F0] 
+//
+// Disable the check for only one person in the team selector. If the
+// game detects only one person in the lobby, it assumes something
+// went wrong and throws up a communications error.
+@enabled
+012C6364 1F2003D5
+
