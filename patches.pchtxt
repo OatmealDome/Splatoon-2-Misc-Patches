@@ -1,0 +1,46 @@
+@nsobid-25E4DE94C55DC7A3A9849280B09FCFCB
+
+@flag offset_shift 0x100
+
+/ ********************************************************************
+/
+/ (c) 2018 OatmealDome and contributors
+/ Licensed under GPLv3, please visit the following URL for more info:
+/ https://www.gnu.org/licenses/gpl-3.0.en.html
+/
+# Splatoon 2 4.1.0 Patches
+/
+/ Dedicated to Simonx22
+/
+/ ********************************************************************
+
+// One Player Private Battles [OatmealDome]
+@disabled
+0025943C 1F2003D51F2003D50900
+00259447 14
+00260320 1F2003D51F2003D50900 
+0026032B 14 
+012C6D08 21008052 
+012A9A88 21008052
+012C6364 1F2003D5
+
+// Have all DLC [Khangaroo]
+@disabled
+00077DD0 1FFD1F71
+
+// Offline Shop [Zewia]
+@disabled
+012F2E5C 200080D2
+
+// Skip Inkopolis News [random]
+@disabled
+00F59820 1F2003D5
+00F59824 21008052
+
+// Dancing NPC [random]
+@disabled
+0095A918 1F2003D5
+
+// Halloween Off the Hook [Shadów]
+@disabled
+00C09170 20008052
