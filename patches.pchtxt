@@ -44,3 +44,8 @@
 // Halloween Off the Hook [Shadów]
 @disabled
 00C09170 20008052
+
+// Load halloween decorations in plaza [Shadów]
+@enabled
+0115F57C 20008052C0035FD6
+
