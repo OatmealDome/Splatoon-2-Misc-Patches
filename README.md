@@ -1,5 +1,7 @@
 # Splatoon 2 Miscellaneous Patches
 
+For support, join our Discord server: <a href="https://discord.gg/rdx6Bt8"><img src="https://discordapp.com/api/guilds/501503149173899264/widget.png?style=shield" /></a>
+
 This repository contains various patches for Splatoon 2 in the IPSwitch format.
 
 ## Credits
