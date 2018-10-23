@@ -8,6 +8,8 @@ This repository contains various patches for Splatoon 2 in the IPSwitch format.
 * Dualie
 * Khangaroo
 * Zewia
+* random
+* Shadów
 
 ********************************************************************
 ## **Usage Guide**
