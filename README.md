@@ -27,7 +27,7 @@ Place the **.pchtxt** file under `SDMC:/switch/ipswitch/(Your folder)`
 **Appyling**\
 Boot _Atmosphère_ on your console and open the Album applet\
 Select "_IPSwitch_" in the homebrew menu\
-Enable/disable patches you would like by selecting "**Toggle Patch Text Content**"\
+Enable/disable patches you would like by selecting "**Toggle Patch Text Contents**"\
 Then select "**Generate IPS by Patch Text**" to apply your patches.
 
 **Profit**\
