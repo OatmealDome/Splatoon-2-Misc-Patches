@@ -48,3 +48,7 @@
 // Load halloween decorations in plaza [Shadów]
 @enabled
 0115F57C 20008052C0035FD6
+
+// Disable Music [Khangaroo]
+@enabled
+016AACDC 1F2003D5
