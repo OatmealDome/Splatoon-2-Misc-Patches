@@ -15,7 +15,7 @@
 / ********************************************************************
 
 // One Player Private Battles [OatmealDome]
-@disabled
+@enabled
 0025943C 1F2003D51F2003D50900
 00259447 14
 00260320 1F2003D51F2003D50900 
@@ -25,27 +25,26 @@
 012C6364 1F2003D5
 
 // Have all DLC [Khangaroo]
-@disabled
+@enabled
 00077DD0 1FFD1F71
 
 // Offline Shop [Zewia]
-@disabled
+@enabled
 012F2E5C 200080D2
 
 // Skip Inkopolis News [random]
-@disabled
+@enabled
 00F59820 1F2003D5
 00F59824 21008052
 
 // Dancing NPC [random]
-@disabled
+@enabled
 0095A918 1F2003D5
 
 // Halloween Off the Hook [Shadów]
-@disabled
+@enabled
 00C09170 20008052
 
 // Load halloween decorations in plaza [Shadów]
 @enabled
 0115F57C 20008052C0035FD6
-
