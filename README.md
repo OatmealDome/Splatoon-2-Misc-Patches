@@ -12,6 +12,7 @@ This repository contains various patches for Splatoon 2 in the IPSwitch format.
 * Zewia
 * random
 * Shadów
+* kgg
 
 ********************************************************************
 ## **Usage Guide**
