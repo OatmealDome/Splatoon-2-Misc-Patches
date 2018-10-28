@@ -52,3 +52,7 @@
 // Disable Music [Khangaroo]
 @enabled
 016AACDC 1F2003D5
+
+// Lobby when banned/no Nintendo Switch Online [kgg]
+@enabled
+01285720 C0035FD6
