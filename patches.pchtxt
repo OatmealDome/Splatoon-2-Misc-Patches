@@ -61,3 +61,7 @@
 @enabled
 0011B960 1F2003D5
 0011B970 1F2003D5
+
+// Force Glowing Ink [Zewia]
+@enabled
+0011B9F8 20008052
