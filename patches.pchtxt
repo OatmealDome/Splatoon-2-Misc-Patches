@@ -72,3 +72,7 @@
 @enabled
 002822AC 2000805213000014
 01940060 98a928
+
+// Load New Year Decorations [Zewia]
+@enabled
+0115F57C 40008052C0035FD6
