@@ -15,6 +15,13 @@
 /
 / ********************************************************************
 
+// Save Plaintext [Samu]
+# "Save Plaintext" will prevent loading unless you encode the plaintext
+# Backup your save immediately after using it to prevent loss of data.
+@disabled
+002A17DC 74A1FC97E30300AA63000291
+002A17ED AC
+
 // Offline Shop [Zewia]
 @enabled
 01352688 200080D2
