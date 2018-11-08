@@ -15,10 +15,10 @@
 /
 / ********************************************************************
 
-// Save Plaintext [Samu]
+// Save Plaintext [Dualie]
 # "Save Plaintext" will prevent loading unless you encode the plaintext
 # Backup your save immediately after using it to prevent loss of data.
-@disabled
+@enabled
 002A17DC 74A1FC97E30300AA63000291
 002A17ED AC
 
@@ -29,7 +29,6 @@
 // Force Inkflakes [Zewia]
 @enabled
 0010DB84 200080D2C0035FD6
-0091D3A0 200080D2C0035FD6
 005D86E0 280080D2
 
 // Load halloween decorations in plaza [Shadów]
@@ -56,7 +55,6 @@
 0010DE90 04000014
 0010DEB4 1F2003D5
 0010DEBC 20008052
-00126294 20008052
 
 // Disable Music [Khangaroo]
 @enabled
