@@ -1,5 +1,4 @@
 @nsobid-476298E4FA079B5C8D4E9056A2F652EC
-# Splatoon 2 4.2.0
 
 @flag offset_shift 0x100
 
@@ -18,7 +17,7 @@
 // Save Plaintext [Dualie]
 # "Save Plaintext" will prevent loading unless you encode the plaintext
 # Backup your save immediately after using it to prevent loss of data.
-@enabled
+@disabled
 002A17DC 74A1FC97E30300AA63000291
 002A17ED AC
 
