@@ -74,3 +74,8 @@
 // Have all DLC [Khangaroo]
 @enabled
 00067414 1FFD1F71
+
+// Map Force [Zewia]
+@enabled
+003092CC 807182D2C0035FD6
+0027546C 09000014
