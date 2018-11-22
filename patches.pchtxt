@@ -59,9 +59,10 @@
 @enabled
 0170A6C8 1F2003D5
 
-// Offline Lobby [kgg]
+// Lobby while banned [Zewia + Kgg]
 @enabled
-012E477C C0035FD6
+012E47A8 03000014
+012E47B8 08000014
 
 // Skip Inkopolis News [random]
 @enabled
