@@ -35,9 +35,10 @@
 011B5464 20008052C0035FD6
 011B54D0 20008052C0035FD6
 
-// Load New Year Decorations [Zewia]
+// Load New Year Decorations [Shadow + Zewia]
 @enabled
-011B5464 40008052C0035FD6
+011B5464 400080D2C0035FD6
+011B54D0 400080D2C0035FD6
 
 // One Player Private Battles [OatmealDome]
 @enabled
