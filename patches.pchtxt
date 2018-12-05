@@ -1,4 +1,4 @@
-@nsobid-476298E4FA079B5C8D4E9056A2F652EC
+@nsobid-401CAF85764DBBD081DBF293D9F2ADCB
 
 @flag offset_shift 0x100
 
@@ -8,76 +8,64 @@
 / Licensed under GPLv3, please visit the following URL for more info:
 / https://www.gnu.org/licenses/gpl-3.0.en.html
 /
-# Splatoon 2 4.2.0 Patches
+# Splatoon 2 4.3.0 Patches
 /
 / Dedicated to Simonx22
 /
 / ********************************************************************
 
-// Save Plaintext [Dualie]
-# "Save Plaintext" will prevent loading unless you encode the plaintext
-# Backup your save immediately after using it to prevent loss of data.
-@disabled
-002A17DC 74A1FC97E30300AA63000291
-002A17ED AC
-
 // Offline Shop [Zewia]
 @enabled
-01352688 200080D2
+0138F628 200080D2
 
 // Force Inkflakes [Zewia]
 @enabled
-0010DBAC 1F2003D5
-005D86E0 280080D2
+00112878 1F2003D5
+005EB3E8 280080D2
 
 // Load halloween decorations in plaza [Shadów]
 @enabled
-011B5464 20008052C0035FD6
-011B54D0 20008052C0035FD6
+011EB3A8 20008052C0035FD6
+011EB414 20008052C0035FD6
 
 // Load New Year Decorations [Shadow + Zewia]
 @enabled
-011B5464 400080D2C0035FD6
-011B54D0 400080D2C0035FD6
+011EB3A8 400080D2C0035FD6
+011EB414 400080D2C0035FD6
 
 // One Player Private Battles [OatmealDome]
 @enabled
-00270A34 1F2003D51F2003D50900
-00270A3F 14
-0027794C 1F2003D51F2003D50900
-00277957 14
-01308D18 21008052
-01325FB0 21008052
-0132560C 1F2003D5
+00280638 1F2003D51F2003D50900
+00280643 14
+00287618 1F2003D51F2003D50900
+00287623 14
+01345CB8 21008052
+01362F50 21008052
+013625AC 1F2003D5
 
 // Force Glowing Ink [Zewia]
 @enabled
-0010DE90 04000014
-0010DEB4 1F2003D5
-0010DEBC 20008052
+00112B6C 04000014
+00112B90 1F2003D5
+00112B98 20008052
 
 // Disable Music [Khangaroo]
 @enabled
-0170A6C8 1F2003D5
-
-// Lobby while banned [Zewia + Kgg]
-@enabled
-012E47A8 03000014
-012E47B8 08000014
+01747668 1F2003D5
 
 // Skip Inkopolis News [random]
 @enabled
-00FAE48C 1F2003D521008052
+00FE41CC 1F2003D521008052
 
 // Dancing NPC [random]
 @enabled
-00995FA0 1F2003D5
+009A8E9C 1F2003D5
 
 // Have all DLC [Khangaroo]
 @enabled
-00067414 1FFD1F71
+0006B848 1FFD1F71
 
 // Map Force [Zewia]
 @enabled
-013254BC 807182D2
-0027546C 09000014
+0136245C 807182D2
+00285094 09000014
