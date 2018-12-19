@@ -1,4 +1,4 @@
-@nsobid-401CAF85764DBBD081DBF293D9F2ADCB
+@nsobid-24EA99F392E43DEE6CEEE3024409A2AB
 
 @flag offset_shift 0x100
 
@@ -8,64 +8,63 @@
 / Licensed under GPLv3, please visit the following URL for more info:
 / https://www.gnu.org/licenses/gpl-3.0.en.html
 /
-# Splatoon 2 4.3.0 Patches
+# Splatoon 2 4.3.1 Patches
 /
 / Dedicated to Simonx22
 /
 / ********************************************************************
 
-// Offline Shop [Zewia]
+// One Player Private Battles [OatmealDome]
 @enabled
-0138F628 200080D2
+0033D524 1F2003D51F2003D50900
+0033D52F 14
+003445F4 1F2003D51F2003D50900
+003445FF 14
+01412B5C 21008052
+0142FDF4 21008052
+0142F450 1F2003D5
+
+// 60Hz netcode [OatmealDome]
+@enabled
+003671FC 2000805213000014
 
 // Force Inkflakes [Zewia]
 @enabled
-00112888 1F2003D5
-005EB3E8 280080D2
-
-// Load halloween decorations in plaza [Shadów]
-@enabled
-011EB3A8 20008052C0035FD6
-011EB414 20008052C0035FD6
-
-// Load New Year Decorations [Shadow + Zewia]
-@enabled
-011EB3A8 400080D2C0035FD6
-011EB414 400080D2C0035FD6
-
-// One Player Private Battles [OatmealDome]
-@enabled
-00280638 1F2003D51F2003D50900
-00280643 14
-00287618 1F2003D51F2003D50900
-00287623 14
-01345CB8 21008052
-01362F50 21008052
-013625AC 1F2003D5
+0011470C 1F2003D5
+006AA8C4 280080D2
 
 // Force Glowing Ink [Zewia]
 @enabled
-00112B6C 04000014
-00112B90 1F2003D5
-00112B98 20008052
+001149F0 04000014
+00114A14 1F2003D5
+00114A1C 20008052
 
-// Disable Music [Khangaroo]
+// Offline Shop [Zewia]
 @enabled
-01747668 1F2003D5
-
-// Skip Inkopolis News [random]
-@enabled
-00FE41CC 1F2003D521008052
-
-// Dancing NPC [random]
-@enabled
-009A8E9C 1F2003D5
+0145C4CC 200080D2
 
 // Have all DLC [Khangaroo]
 @enabled
-0006B848 1FFD1F71
+0006D548 1FFD1F71
+
+// Skip Inkopolis News [random]
+@enabled
+010B0A0C 1F2003D521008052
+
+// Load New Year Decorations [Shadow + Zewia]
+@enabled
+012B7BE8 400080D2C0035FD6
+012B7C54 20008052C0035FD6
+
+// Dancing NPC [random]
+@enabled
+00A68408 1F2003D5
+
+// Disable Music [Khangaroo]
+@enabled
+0181450C 1F2003D5
 
 // Map Force [Zewia]
 @enabled
-0136245C 807182D2
-00285094 09000014
+0142F300 807182D2
+00341F98 09000014

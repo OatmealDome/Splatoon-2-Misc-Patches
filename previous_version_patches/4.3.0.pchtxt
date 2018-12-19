@@ -1,0 +1,71 @@
+@nsobid-401CAF85764DBBD081DBF293D9F2ADCB
+
+@flag offset_shift 0x100
+
+/ ********************************************************************
+/
+/ (c) 2018 OatmealDome and contributors
+/ Licensed under GPLv3, please visit the following URL for more info:
+/ https://www.gnu.org/licenses/gpl-3.0.en.html
+/
+# Splatoon 2 4.3.0 Patches
+/
+/ Dedicated to Simonx22
+/
+/ ********************************************************************
+
+// Offline Shop [Zewia]
+@enabled
+0138F628 200080D2
+
+// Force Inkflakes [Zewia]
+@enabled
+00112888 1F2003D5
+005EB3E8 280080D2
+
+// Load halloween decorations in plaza [Shadów]
+@enabled
+011EB3A8 20008052C0035FD6
+011EB414 20008052C0035FD6
+
+// Load New Year Decorations [Shadow + Zewia]
+@enabled
+011EB3A8 400080D2C0035FD6
+011EB414 400080D2C0035FD6
+
+// One Player Private Battles [OatmealDome]
+@enabled
+00280638 1F2003D51F2003D50900
+00280643 14
+00287618 1F2003D51F2003D50900
+00287623 14
+01345CB8 21008052
+01362F50 21008052
+013625AC 1F2003D5
+
+// Force Glowing Ink [Zewia]
+@enabled
+00112B6C 04000014
+00112B90 1F2003D5
+00112B98 20008052
+
+// Disable Music [Khangaroo]
+@enabled
+01747668 1F2003D5
+
+// Skip Inkopolis News [random]
+@enabled
+00FE41CC 1F2003D521008052
+
+// Dancing NPC [random]
+@enabled
+009A8E9C 1F2003D5
+
+// Have all DLC [Khangaroo]
+@enabled
+0006B848 1FFD1F71
+
+// Map Force [Zewia]
+@enabled
+0136245C 807182D2
+00285094 09000014
