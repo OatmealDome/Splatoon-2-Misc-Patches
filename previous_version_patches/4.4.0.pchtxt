@@ -1,0 +1,71 @@
+@nsobid-A9E20482D1F7B034BCE8CBCF6DE63BBA
+
+@flag offset_shift 0x100
+
+/ ********************************************************************
+/
+/ (c) 2018 OatmealDome and contributors
+/ Licensed under GPLv3, please visit the following URL for more info:
+/ https://www.gnu.org/licenses/gpl-3.0.en.html
+/
+# Splatoon 2 4.4.0 Patches
+/
+/ Dedicated to Simonx22
+/
+/ ********************************************************************
+
+// One Player Private Battles [OatmealDome]
+@enabled
+00360994 1F2003D51F2003D50900
+0036099F 14
+00367A7C 1F2003D51F2003D50900
+00367A87 14
+01457AB4 21008052
+01474E88 21008052
+014744E4 1F2003D5
+
+// 60Hz netcode [OatmealDome]
+@enabled
+003BF4D0 2000805213000014
+
+// Force Inkflakes [Zewia]
+@enabled
+00111968 1F2003D5
+006D4910 280080D2
+
+// Force Glowing Ink [Zewia]
+@enabled
+00111C4C 04000014
+00111C70 1F2003D5
+00111C78 20008052
+
+// Offline Shop [Zewia]
+@enabled
+014A1830 200080D2
+
+// Have all DLC [Khangaroo]
+@enabled
+000699C4 1FFD1F71
+
+// Skip Inkopolis News [random]
+@enabled
+010ED020 1F2003D521008052
+
+// Dancing NPC [random]
+@enabled
+00A9703C 1F2003D5
+
+// Disable Music [Khangaroo]
+@enabled
+0185A170 1F2003D5
+
+// Map Force [Zewia]
+@enabled
+01474394 807182D2
+00365420 09000014
+
+// Force night  [Shadow]
+@enabled
+00A0D44C 1F2003D5
+00A0D454 21600491
+006D41FC 530080D2
