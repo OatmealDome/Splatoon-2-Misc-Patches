@@ -1,0 +1,57 @@
+@nsobid-26D72E09076C3B11F53CC37E86960692
+
+@flag offset_shift 0x100
+
+/ ********************************************************************
+/
+/ (c) 2018 OatmealDome and contributors
+/ Licensed under GPLv3, please visit the following URL for more info:
+/ https://www.gnu.org/licenses/gpl-3.0.en.html
+/
+# Splatoon 2 5.0.0 Patches
+/
+/ Dedicated to Simonx22
+/
+/ ********************************************************************
+
+// One Player Private Battles [OatmealDome]
+@enabled
+00356498 1F2003D51F2003D50900
+003564A3 14
+0035D824 1F2003D51F2003D50900
+0035D82F 14
+014A5230 21008052
+014C2D64 21008052
+014C2220 1F2003D5
+
+// Force Inkflakes [Zewia]
+@enabled
+00110E80 1F2003D5
+006D9388 280080D2
+
+// Dancing NPC [random]
+@enabled
+00AA5848 1F2003D5
+
+// Disable Music [Khangaroo]
+@enabled
+018A8620 1F2003D5
+
+// Map Force [Zewia]
+@enabled
+014C2088 807182D2
+0035AFB0 09000014
+
+// ShootingRange Replacements (Lost Outpost) [AmazingChz]
+@enabled
+023FCACA "Fld_Shakehouse00_Cop"
+
+// Load New Year Decorations [Shadow + Zewia]
+@enabled
+0133E9A4 400080D2C0035FD6
+0133EA10 400080D2C0035FD6
+
+// Load Final Fest + Halloween Decorations [Shadów]
+@enabled
+0133E9A4 20008052C0035FD6
+0133EA10 20008052C0035FD6
